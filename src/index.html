@@ -23,16 +23,21 @@
           </div>
           <div class="media-content">
             <p class="title is-4">Aged Cheddar</p>
-            <p class="subtitle is-6 price">$8,95</p>
+            <span class="subtitle is-6 price">$8,95</span>
           </div>
         </div>
         <div class="content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
           <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a> <br /> <time datetime="2016-1-1">11:09 PM -
-            1 Jan 2016</time> </div>
+            1 Jan 2016</time>
+        </div>
       </div>
     </div>
   </div>
 </body>
-<script> document.getElementsByClassName('product')[0].setAttribute('data-price', '8.95') </script>
+<script>
+  let price = document.getElementsByClassName('price')[0].innerHTML;
+  
+  document.getElementsByClassName('product')[0].setAttribute('data-price', price) 
+</script>
 
 </html>
